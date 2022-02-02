@@ -1,13 +1,13 @@
 const words = {
 	"words": [
 		"apple",
-		"market",
-		"snacks"
+		"steak",
+		"snack"
 	],
 	"valid": [
 		"apple",
-		"snacks",
-		"apple",
+		"snack",
+		"",
 		"aahed",
 		"aalii",
 		"aargh",
