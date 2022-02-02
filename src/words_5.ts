@@ -41,7 +41,7 @@ const words = {
 		"Torte",
 		"Tuile",
 		"Wafer",
-		"Wheat",
+		"Wheat"
 	],
 	"valid": [
 		"Adobo",
