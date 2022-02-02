@@ -45,7 +45,7 @@
 		target="_blank">Wordle</a
 	>
 	by Josh Wardle with additional modes and features. Written with Svelte, in Typescript by
-	<a href="https://github.com/MikhaD" target="_blank">MikhaD</a>.
+	<a href="https://github.com/ansible42" target="_blank">ansible42</a>.
 	<br />
 	Open the settings menu to see some of the additional features.
 </div>
