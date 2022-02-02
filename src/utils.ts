@@ -166,7 +166,7 @@ export function createNewGame(mode: GameMode): GameState {
 export function createDefaultSettings(): Settings {
 	return {
 		hard: new Array(modeData.modes.length).map(() => false),
-		dark: true,
+		dark: false,
 		colorblind: false,
 		tutorial: 2,
 	};
