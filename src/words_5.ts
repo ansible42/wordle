@@ -7,7 +7,7 @@ const words = {
 	"valid": [
 		"apple",
 		"snack",
-		"",
+		"steak",
 		"aahed",
 		"aalii",
 		"aargh",
