@@ -6,7 +6,7 @@
 </script>
 
 <h3>how to play</h3>
-<div>Guess the <strong>WORDLE</strong> in {ROWS} tries.</div>
+<div>Guess the <strong>WORDLE</strong> in {ROWS} tries. All answers are food themed.</div>
 <div>Each guess must be a valid {COLS} letter word. Hit the enter button to submit.</div>
 <div>
 	After each guess, the color of the tiles will change to show how close your guess was to the
@@ -15,19 +15,19 @@
 <div class:complete={visible} class="examples">
 	<div><strong>Examples</strong></div>
 	<div class="row">
-		<Tile value="w" state="🟩" />
+		<Tile value="s" state="🟩" />
+		<Tile value="t" state="🔳" />
 		<Tile value="e" state="🔳" />
 		<Tile value="a" state="🔳" />
-		<Tile value="r" state="🔳" />
-		<Tile value="y" state="🔳" />
+		<Tile value="k" state="🔳" />
 	</div>
 	<div>The letter <strong>W</strong> is in the word and in the correct spot.</div>
 	<div class="row">
-		<Tile value="p" state="🔳" />
-		<Tile value="i" state="🟨" />
-		<Tile value="l" state="🔳" />
-		<Tile value="l" state="🔳" />
-		<Tile value="s" state="🔳" />
+		<Tile value="b" state="🔳" />
+		<Tile value="a" state="🟨" />
+		<Tile value="c" state="🔳" />
+		<Tile value="o" state="🔳" />
+		<Tile value="n" state="🔳" />
 	</div>
 	<div>The letter <strong>I</strong> is in the word but in the wrong spot.</div>
 	<div class="row">
