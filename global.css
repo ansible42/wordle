@@ -39,7 +39,9 @@
 }
 
 body { height: 100% }
-
+.figure{
+	vertical-align:auto;
+}
 .light {
 	--fg-primary: #1a1a1b;
 	--fg-secondary: #787c7e;
