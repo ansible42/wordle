@@ -15,39 +15,52 @@
 <div class:complete={visible} class="examples">
 	<div><strong>Examples</strong></div>
 	<div class="row">
-		<Tile value="s" state="🟩" />
-		<Tile value="t" state="🔳" />
-		<Tile value="e" state="🔳" />
+		<Tile value="l" state="🟩" />
+		<Tile value="o" state="🔳" />
+		<Tile value="c" state="🔳" />
 		<Tile value="a" state="🔳" />
-		<Tile value="k" state="🔳" />
+		<Tile value="l" state="🔳" />
 	</div>
 	<div>The letter <strong>W</strong> is in the word and in the correct spot.</div>
 	<div class="row">
-		<Tile value="b" state="🔳" />
+		<Tile value="t" state="🔳" />
 		<Tile value="a" state="🟨" />
-		<Tile value="c" state="🔳" />
-		<Tile value="o" state="🔳" />
-		<Tile value="n" state="🔳" />
+		<Tile value="s" state="🔳" />
+		<Tile value="t" state="🔳" />
+		<Tile value="y" state="🔳" />
 	</div>
 	<div>The letter <strong>I</strong> is in the word but in the wrong spot.</div>
 	<div class="row">
-		<Tile value="v" state="🔳" />
+		<Tile value="s" state="🔳" />
+		<Tile value="n" state="🔳" />
 		<Tile value="a" state="🔳" />
-		<Tile value="g" state="🔳" />
-		<Tile value="u" state="⬛" />
-		<Tile value="e" state="🔳" />
+		<Tile value="c" state="⬛" />
+		<Tile value="k" state="🔳" />
 	</div>
 	<div>The letter <strong>U</strong> is not in the word in any spot.</div>
+	<div>All ansers are food or farm realated.</div>
+	<a href="https://seattlefarmersmarkets.org/">
+		<img src="img/NFM-logo-no-background.gif" alt="NFM" style="width:40%">
+	  </a> 
 </div>
+
+
 <div>
+
+	<br /> <br />
+	Open the settings menu to see some of the additional features.
+	<br/> <br/>
 	This is a recreation of the original <a
 		href="https://www.powerlanguage.co.uk/wordle/"
 		target="_blank">Wordle</a
 	>
 	by Josh Wardle with additional modes and features. Written with Svelte, in Typescript by
-	<a href="https://github.com/MikhaD" target="_blank">MikhaD</a>. Modifed by <a href="https://github.com/ansible42" target="_blank">Ansible42</a> for his own amusement. 
-	<br />
-	Open the settings menu to see some of the additional features.
+	<a href="https://github.com/MikhaD" target="_blank">MikhaD</a>. 
+	Modifed by <a href="https://github.com/ansible42" target="_blank">Ansible42</a> 
+	for NFM unter <a href="https://github.com/ansible42/wordle/blob/main/LICENSE">MIT license</a>. 
+	<br/><br/>
+	<a href="https://ansible42.github.io/wordle/" ><img src="https://github.com/ansible42/wordle/workflows/Publish/badge.svg?branch=main" alt="Publish workflow"/></a>	
+
 </div>
 
 <style lang="scss">

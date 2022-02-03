@@ -4,6 +4,7 @@
 	import { mode } from "../stores";
 	import { modeData } from "../utils";
 	import GameIcon from "./GameIcon.svelte";
+	import NFM from "./nmf.svelte";
 	import type { Toaster } from "./widgets";
 
 	export let showStats: boolean;
@@ -18,9 +19,24 @@
 			showRefresh = false;
 		}
 	});
+	function goHome() {return window.open("https://seattlefarmersmarkets.org", "_blank")}
 </script>
 
 <header>
+	<div>
+	<h1
+	on:click|self={() => {
+		$mode = ($mode + 1) % modeData.modes.length;
+		toaster.pop(modeData.modes[$mode].name);
+	}}
+	on:contextmenu|preventDefault|self={() => {
+		$mode = ($mode - 1 + modeData.modes.length) % modeData.modes.length;
+		toaster.pop(modeData.modes[$mode].name);
+	}}
+>
+	wordle+market
+	</h1>
+</div>
 	<div class="icons">
 		<GameIcon onClick={() => dispatch("tutorial")}>
 			<path
@@ -36,18 +52,6 @@
 			</GameIcon>
 		{/if}
 	</div>
-	<h1
-		on:click|self={() => {
-			$mode = ($mode + 1) % modeData.modes.length;
-			toaster.pop(modeData.modes[$mode].name);
-		}}
-		on:contextmenu|preventDefault|self={() => {
-			$mode = ($mode - 1 + modeData.modes.length) % modeData.modes.length;
-			toaster.pop(modeData.modes[$mode].name);
-		}}
-	>
-		wordle+market
-	</h1>
 	<div class="icons">
 		{#if showStats}
 			<GameIcon onClick={() => dispatch("stats")}>
@@ -69,6 +73,11 @@
 			<span class="ok">OK</span>
 		</div>
 	{/if}
+	<div class="icons">
+		<NFM>
+			
+		</NFM>
+	</div>                     
 </header>
 
 <style lang="scss">
@@ -124,11 +133,12 @@
 		z-index: 1;
 		display: flex;
 	}
+
 	h1 {
-		position: absolute;
+		position: relative;
 		width: 100%;
 		font-size: var(--fs-large);
 		cursor: pointer;
-		text-align: center;
+		text-align: right;
 	}
 </style>
